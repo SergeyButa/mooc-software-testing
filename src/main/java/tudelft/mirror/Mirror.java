@@ -12,10 +12,10 @@ public class Mirror {
                 mirror += String.valueOf(string.charAt(end));
             }
             else {
-                break;
+                return mirror;
             }
         }
 
-        return begin == end ? string : mirror;
+        return string;
     }
 }
